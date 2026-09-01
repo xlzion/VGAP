@@ -1,0 +1,26 @@
+a3s_gemma4b: 1150 records (726 attack)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 17/883 [00:00<00:05, 168.11it/s]Loading weights:   9%|▉         | 81/883 [00:00<00:01, 443.42it/s]Loading weights:  15%|█▌        | 135/883 [00:00<00:01, 481.73it/s]Loading weights:  22%|██▏       | 196/883 [00:00<00:01, 531.65it/s]Loading weights:  29%|██▉       | 257/883 [00:00<00:01, 558.57it/s]Loading weights:  36%|███▌      | 317/883 [00:00<00:00, 571.83it/s]Loading weights:  43%|████▎     | 381/883 [00:00<00:00, 587.22it/s]Loading weights:  50%|████▉     | 440/883 [00:00<00:00, 576.82it/s]Loading weights:  91%|█████████ | 803/883 [00:00<00:00, 1510.33it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 942.61it/s] 
+  0/1150
+  100/1150
+  200/1150
+  300/1150
+  400/1150
+  500/1150
+  600/1150
+  700/1150
+  800/1150
+  900/1150
+  1000/1150
+  1100/1150
+
+DLA additivity |err|=0.0302 (should be ~0)  | total s AUROC=0.500 (should be ~chance)
+pos-discriminative comps: 24  (their sum AUROC=0.724)
+neg-discriminative comps: 19  (their sum AUROC=0.281)
+DECISIVE (OOF de-biased): pos-only AUROC=0.625  disc-only(pos+neg) AUROC=0.526
+NULL (label-permutation, same OOF select+sum): pos-only mean=0.502 max=0.525  -> signal_real=True (pos_oof must exceed null_max by >=0.05)
+cancellation test: neg/pos magnitude=0.94, within-attack corr(neg,pos)=-0.689 (< -0.3 = cancel)
+drowning test: var_pos=1.170 var_nondisc=3.601 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('m21', 0.68), ('a4', 0.68), ('m26', 0.67), ('m27', 0.67), ('m20', 0.66), ('a19', 0.65)]
+top -disc comps: [('a27', 0.33), ('a5', 0.35), ('a29', 0.35), ('a13', 0.38), ('a31', 0.38), ('a2', 0.38)]
+VERDICT (single-host): inconclusive  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_a3s_gemma4b.json

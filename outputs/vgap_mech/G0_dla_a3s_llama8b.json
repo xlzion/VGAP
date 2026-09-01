@@ -1,0 +1,77 @@
+{
+  "tag": "a3s_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 1150,
+  "n_layers": 32,
+  "is_gemma_norm": false,
+  "dla_additivity_err": 0.006521947391800312,
+  "s_auroc": 0.6015158012370705,
+  "n_pos_comp": 20,
+  "n_neg_comp": 21,
+  "pos_sum_auroc": 0.6344891886272676,
+  "neg_sum_auroc": 0.32180401788034724,
+  "disc_only_auroc": 0.6083963563594782,
+  "pos_sum_auroc_OOF": 0.6338053563075003,
+  "disc_only_auroc_OOF": 0.605516463953428,
+  "null_pos_only_mean": 0.5013624668641821,
+  "null_pos_only_max": 0.5168375435313686,
+  "signal_real": true,
+  "cancel_within_attack_corr": -0.08180134180237018,
+  "neg_over_pos_magnitude": 0.3999976372984729,
+  "var_pos": 5.721522993922203,
+  "var_nondisc": 0.12405792552045017,
+  "var_total": 6.926845222217753,
+  "top_positive_components": [
+    {
+      "comp": "m20",
+      "auroc": 0.6622258173501742
+    },
+    {
+      "comp": "m28",
+      "auroc": 0.6533993450803056
+    },
+    {
+      "comp": "m30",
+      "auroc": 0.6425879723478352
+    },
+    {
+      "comp": "m26",
+      "auroc": 0.6301555434274131
+    },
+    {
+      "comp": "m25",
+      "auroc": 0.625974582878528
+    },
+    {
+      "comp": "m29",
+      "auroc": 0.62569520245335
+    }
+  ],
+  "top_negative_components": [
+    {
+      "comp": "a18",
+      "auroc": 0.365527054420708
+    },
+    {
+      "comp": "a24",
+      "auroc": 0.39172059358594524
+    },
+    {
+      "comp": "a11",
+      "auroc": 0.3951316336607932
+    },
+    {
+      "comp": "m18",
+      "auroc": 0.3994230469359114
+    },
+    {
+      "comp": "a20",
+      "auroc": 0.4055044440979261
+    },
+    {
+      "comp": "m12",
+      "auroc": 0.4120503924320391
+    }
+  ],
+  "verdict": "inconclusive"
+}

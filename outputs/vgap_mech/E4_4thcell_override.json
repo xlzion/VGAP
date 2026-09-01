@@ -1,0 +1,20 @@
+{
+  "recipient": "Qwen2.5-7B-base",
+  "donor": "Qwen2.5-7B-Instruct",
+  "concept": "override",
+  "swap_from_layer": 7,
+  "n_layers": 28,
+  "n": 200,
+  "n_pos": 84,
+  "readout_orig": 0.4920977011494252,
+  "readout_orig_ci": [
+    0.41153017241379314,
+    0.5710231937602627
+  ],
+  "readout_after_swap": 0.9514573070607554,
+  "readout_after_swap_ci": [
+    0.9206588669950738,
+    0.9784508415435139
+  ],
+  "delta": 0.4593596059113302
+}

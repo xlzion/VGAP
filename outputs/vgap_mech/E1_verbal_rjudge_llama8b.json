@@ -1,0 +1,47 @@
+{
+  "tag": "rjudge_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "verbal": {
+    "injection": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.5609019318321644,
+        0.5152922357573521,
+        0.6045142734096222
+      ],
+      "n_pos": 301,
+      "frac_parsed": 1.0
+    },
+    "override": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9958172629339008,
+        0.9902900984173427,
+        1.0
+      ],
+      "n_pos": 206,
+      "frac_parsed": 0.702276707530648
+    },
+    "email": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9705473399693324,
+        0.9548881474647192,
+        0.984594855368142
+      ],
+      "n_pos": 353,
+      "frac_parsed": 0.9334500875656743
+    },
+    "code": {
+      "type": "content",
+      "verbal_auroc": [
+        0.6053259141494436,
+        0.5622383412824589,
+        0.6452311555252731
+      ],
+      "n_pos": 333,
+      "frac_parsed": 1.0
+    }
+  }
+}

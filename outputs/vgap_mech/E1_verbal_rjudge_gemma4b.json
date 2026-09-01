@@ -1,0 +1,47 @@
+{
+  "tag": "rjudge_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "verbal": {
+    "injection": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.5377630121816168,
+        0.49152962347729795,
+        0.583567583364095
+      ],
+      "n_pos": 301,
+      "frac_parsed": 1.0
+    },
+    "override": {
+      "type": "content",
+      "verbal_auroc": [
+        0.8900319191381832,
+        0.8600094759941481,
+        0.9188613844926187
+      ],
+      "n_pos": 206,
+      "frac_parsed": 1.0
+    },
+    "email": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9401720508355641,
+        0.9174890194141955,
+        0.9594709176910882
+      ],
+      "n_pos": 353,
+      "frac_parsed": 1.0
+    },
+    "code": {
+      "type": "content",
+      "verbal_auroc": [
+        0.653670477199889,
+        0.6231560867590279,
+        0.6851841862871276
+      ],
+      "n_pos": 333,
+      "frac_parsed": 1.0
+    }
+  }
+}

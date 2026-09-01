@@ -1,0 +1,49 @@
+{
+  "tag": "rjudge_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n_eval": 150,
+  "n_neg": 20,
+  "n_pos": 24,
+  "conditions": {
+    "none": {
+      "step0_auroc": 0.4403637011945088,
+      "verbal_auroc": [
+        0.4761098234979497,
+        0.3923003209128187,
+        0.5699144232483508
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_neg": {
+      "step0_auroc": 0.4394722766981637,
+      "verbal_auroc": [
+        0.47842752718844705,
+        0.3926346050989481,
+        0.5742668033517561
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_random": {
+      "step0_auroc": 0.4380459975040114,
+      "verbal_auroc": [
+        0.47093956141914783,
+        0.38571046532358705,
+        0.5671264931360314
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_pos": {
+      "step0_auroc": 0.43483686931716886,
+      "verbal_auroc": [
+        0.4738812622570868,
+        0.3898110180067748,
+        0.5700659654127296
+      ],
+      "frac_parsed": 1.0
+    }
+  },
+  "verbal_recovery": 0.0023177036904973303,
+  "readout_recovery": -0.0008914244963451057,
+  "beats_controls": false,
+  "causal_headline": false
+}

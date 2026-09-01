@@ -1,0 +1,22 @@
+override_llama8b: 571 records (206 attack) | llama3-8b-instruct
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:27, 10.56it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:03, 88.87it/s]Loading weights:  14%|█▍        | 41/291 [00:00<00:02, 121.55it/s]Loading weights:  20%|██        | 59/291 [00:00<00:01, 140.29it/s]Loading weights:  26%|██▋       | 77/291 [00:00<00:01, 151.13it/s]Loading weights:  33%|███▎      | 95/291 [00:00<00:01, 156.66it/s]Loading weights:  39%|███▉      | 113/291 [00:00<00:01, 162.41it/s]Loading weights:  45%|████▌     | 132/291 [00:00<00:00, 166.55it/s]Loading weights:  53%|█████▎    | 153/291 [00:01<00:00, 179.36it/s]Loading weights:  60%|██████    | 175/291 [00:01<00:00, 186.34it/s]Loading weights:  67%|██████▋   | 194/291 [00:01<00:00, 187.19it/s]Loading weights:  73%|███████▎  | 213/291 [00:01<00:00, 185.04it/s]Loading weights:  81%|████████  | 235/291 [00:01<00:00, 193.74it/s]Loading weights:  88%|████████▊ | 256/291 [00:01<00:00, 198.26it/s]Loading weights:  95%|█████████▍| 276/291 [00:01<00:00, 188.43it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 168.44it/s]
+expected-number score over 211 pure-digit tokens (0-100)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=1.000 CI[0.999,1.000] | perm baseline=0.502
+  layer  0/32: probe=0.500  lens=0.500  gap=+0.000
+  layer 11/32: probe=0.999  lens=0.499  gap=+0.501
+  layer 22/32: probe=1.000  lens=0.974  gap=+0.026
+  layer 31/32: probe=1.000  lens=1.000  gap=+0.000
+  layer 32/32: probe=1.000  lens=1.000  gap=+0.000
+
+probe(last)=1.000  lens(last)=1.000  tail_probe_min=1.000
+VERDICT (single-host, pre-registered): No-Go A (info in logits -> fallback)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_override_llama8b.json

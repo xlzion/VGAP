@@ -1,0 +1,17 @@
+{
+  "tag": "urlverbal_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "verbal": {
+    "url": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9204184442225651,
+        0.8837549355541436,
+        0.9525965553235907
+      ],
+      "n_pos": 92,
+      "frac_parsed": 0.9964973730297724
+    }
+  }
+}

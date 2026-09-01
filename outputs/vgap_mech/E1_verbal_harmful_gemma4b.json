@@ -1,0 +1,20 @@
+{
+  "tag": "harmfulverbal_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "verbal": {
+    "harmful": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.5082810385135966,
+        0.4621574689307247,
+        0.5559234649932324
+      ],
+      "n_pos": 301,
+      "parse_fail_pos": 0.0,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.5082810385135966,
+      "frac_no_number": 0.0
+    }
+  }
+}

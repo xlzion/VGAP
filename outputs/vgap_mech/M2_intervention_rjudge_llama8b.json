@@ -1,0 +1,34 @@
+{
+  "tag": "rjudge_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "probe_reference": 0.96,
+  "interventions": {
+    "zeroshot": {
+      "verbal_auroc": [
+        0.5613695090439276,
+        0.5157558139534885,
+        0.6051387350805956
+      ],
+      "frac_nonzero": 1.0
+    },
+    "cot": {
+      "verbal_auroc": [
+        0.47395102743939954,
+        0.430838101390427,
+        0.5171785406669127
+      ],
+      "frac_nonzero": 0.8266199649737302
+    },
+    "fewshot": {
+      "verbal_auroc": [
+        0.6293527747016119,
+        0.5845554940322383,
+        0.674318321643903
+      ],
+      "frac_nonzero": 0.8791593695271454
+    }
+  },
+  "best_verbal_auroc": 0.6293527747016119,
+  "not_fixable_by_prompting": true
+}

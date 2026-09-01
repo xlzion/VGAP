@@ -1,0 +1,85 @@
+override_a3s_qwen7b: 1150 records (3 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:24, 13.52it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 133.13it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:01, 171.05it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 191.84it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 200.42it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 207.07it/s]Loading weights:  43%|████▎     | 146/339 [00:00<00:00, 209.47it/s]Loading weights:  50%|████▉     | 168/339 [00:00<00:00, 208.02it/s]Loading weights:  56%|█████▌    | 190/339 [00:01<00:00, 203.72it/s]Loading weights:  62%|██████▏   | 211/339 [00:01<00:00, 197.63it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 196.89it/s]Loading weights:  76%|███████▌  | 257/339 [00:01<00:00, 195.69it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 196.25it/s]Loading weights:  90%|████████▉ | 304/339 [00:01<00:00, 201.24it/s]Loading weights:  97%|█████████▋| 329/339 [00:01<00:00, 214.06it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 197.85it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/1150
+  100/1150
+  200/1150
+  300/1150
+  400/1150
+  500/1150
+  600/1150
+  700/1150
+  800/1150
+  900/1150
+  1000/1150
+  1100/1150
+
+STEP 0 (final-logit expected-number) AUROC=0.614 CI[0.403,0.939] | perm baseline=0.482
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  layer  9/28: probe=0.999  lens=0.381  gap=+0.618
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  layer 19/28: probe=1.000  lens=0.736  gap=+0.264
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  layer 27/28: probe=0.978  lens=0.549  gap=+0.428
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/model_selection/_split.py:811: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  layer 28/28: probe=0.937  lens=0.613  gap=+0.324
+
+probe(last)=0.937  lens(last)=0.613  tail_probe_min=0.937
+VERDICT (single-host, pre-registered): grey
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_override_a3s_qwen7b.json

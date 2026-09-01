@@ -1,0 +1,12 @@
+{
+  "recipient": "Qwen2.5-7B-Instruct",
+  "donor": "Qwen2.5-7B-base",
+  "concept": "injection",
+  "swap_from_layer": 14,
+  "n_layers": 28,
+  "n": 120,
+  "n_pos": 87,
+  "readout_orig": 0.5726227795193313,
+  "readout_after_swap": 0.5517241379310345,
+  "delta": -0.020898641588296796
+}

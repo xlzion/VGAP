@@ -1,0 +1,17 @@
+{
+  "tag": "urlverbal_qwen7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "n": 571,
+  "verbal": {
+    "url": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9675614958700189,
+        0.9500544612871018,
+        0.9819835254606518
+      ],
+      "n_pos": 92,
+      "frac_parsed": 0.2486865148861646
+    }
+  }
+}

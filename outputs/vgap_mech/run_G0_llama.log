@@ -1,0 +1,19 @@
+rjudge_llama8b: 571 records (301 attack)
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:25, 11.32it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:03, 89.53it/s]Loading weights:  14%|█▎        | 40/291 [00:00<00:02, 120.89it/s]Loading weights:  20%|█▉        | 58/291 [00:00<00:01, 136.94it/s]Loading weights:  26%|██▌       | 76/291 [00:00<00:01, 147.25it/s]Loading weights:  32%|███▏      | 94/291 [00:00<00:01, 151.55it/s]Loading weights:  38%|███▊      | 112/291 [00:00<00:01, 154.17it/s]Loading weights:  45%|████▍     | 130/291 [00:00<00:01, 156.76it/s]Loading weights:  51%|█████     | 148/291 [00:01<00:00, 160.15it/s]Loading weights:  57%|█████▋    | 166/291 [00:01<00:00, 160.09it/s]Loading weights:  63%|██████▎   | 184/291 [00:01<00:00, 159.64it/s]Loading weights:  70%|███████   | 204/291 [00:01<00:00, 169.91it/s]Loading weights:  79%|███████▊  | 229/291 [00:01<00:00, 188.20it/s]Loading weights:  85%|████████▌ | 248/291 [00:01<00:00, 176.20it/s]Loading weights:  91%|█████████▏| 266/291 [00:01<00:00, 169.80it/s]Loading weights:  98%|█████████▊| 284/291 [00:01<00:00, 167.24it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 155.48it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+DLA additivity |err|=0.0064 (should be ~0)  | total s AUROC=0.527 (should be ~chance)
+pos-discriminative comps: 26  (their sum AUROC=0.627)
+neg-discriminative comps: 18  (their sum AUROC=0.192)
+cancellation test: neg/pos magnitude=0.16, within-attack corr(neg,pos)=0.090 (< -0.3 = cancel)
+drowning test: var_pos=2.070 var_nondisc=9.101 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('a7', 0.75), ('m14', 0.74), ('m7', 0.7), ('m19', 0.67), ('m13', 0.66), ('m11', 0.66)]
+top -disc comps: [('a0', 0.25), ('a5', 0.25), ('a10', 0.29), ('a2', 0.32), ('m9', 0.34), ('m12', 0.35)]
+VERDICT (single-host): inconclusive  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_llama8b.json

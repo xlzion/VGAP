@@ -1,0 +1,26 @@
+a3s_qwen7b: 1150 records (726 attack)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.37it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 129.64it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 156.48it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 181.29it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 186.39it/s]Loading weights:  36%|███▌      | 122/339 [00:00<00:01, 193.15it/s]Loading weights:  42%|████▏     | 142/339 [00:00<00:01, 195.11it/s]Loading weights:  48%|████▊     | 162/339 [00:00<00:00, 193.22it/s]Loading weights:  54%|█████▍    | 184/339 [00:01<00:00, 199.66it/s]Loading weights:  61%|██████▏   | 208/339 [00:01<00:00, 210.69it/s]Loading weights:  68%|██████▊   | 230/339 [00:01<00:00, 212.76it/s]Loading weights:  74%|███████▍  | 252/339 [00:01<00:00, 204.71it/s]Loading weights:  83%|████████▎ | 281/339 [00:01<00:00, 218.91it/s]Loading weights:  90%|████████▉ | 304/339 [00:01<00:00, 206.41it/s]Loading weights:  97%|█████████▋| 329/339 [00:01<00:00, 218.28it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 197.65it/s]
+  0/1150
+  100/1150
+  200/1150
+  300/1150
+  400/1150
+  500/1150
+  600/1150
+  700/1150
+  800/1150
+  900/1150
+  1000/1150
+  1100/1150
+
+DLA additivity |err|=0.0119 (should be ~0)  | total s AUROC=0.546 (should be ~chance)
+pos-discriminative comps: 24  (their sum AUROC=0.613)
+neg-discriminative comps: 13  (their sum AUROC=0.286)
+DECISIVE (OOF de-biased): pos-only AUROC=0.598  disc-only(pos+neg) AUROC=0.568
+NULL (label-permutation, same OOF select+sum): pos-only mean=0.500 max=0.510  -> signal_real=True (pos_oof must exceed null_max by >=0.05)
+cancellation test: neg/pos magnitude=0.13, within-attack corr(neg,pos)=-0.537 (< -0.3 = cancel)
+drowning test: var_pos=11.103 var_nondisc=41.829 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('a14', 0.69), ('a10', 0.63), ('m20', 0.61), ('a23', 0.6), ('a18', 0.6), ('m9', 0.59)]
+top -disc comps: [('m11', 0.29), ('m8', 0.36), ('m18', 0.37), ('m13', 0.37), ('m4', 0.38), ('m16', 0.39)]
+VERDICT (single-host): inconclusive  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_a3s_qwen7b.json

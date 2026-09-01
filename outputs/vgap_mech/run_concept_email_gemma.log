@@ -1,0 +1,21 @@
+email_gemma4b: 571 records (353 attack) | gemma-3-4b-it
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 17/883 [00:00<00:05, 151.76it/s]Loading weights:   9%|▉         | 82/883 [00:00<00:01, 417.44it/s]Loading weights:  15%|█▌        | 134/883 [00:00<00:01, 460.79it/s]Loading weights:  22%|██▏       | 195/883 [00:00<00:01, 516.99it/s]Loading weights:  28%|██▊       | 251/883 [00:00<00:01, 519.74it/s]Loading weights:  36%|███▌      | 316/883 [00:00<00:01, 557.72it/s]Loading weights:  42%|████▏     | 374/883 [00:00<00:00, 564.58it/s]Loading weights:  49%|████▉     | 432/883 [00:00<00:00, 564.97it/s]Loading weights:  83%|████████▎ | 737/883 [00:00<00:00, 1326.59it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 910.59it/s] 
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.971 CI[0.957,0.982] | perm baseline=0.508
+  layer  0/34: probe=0.500  lens=0.500  gap=+0.000
+  layer 11/34: probe=0.972  lens=0.649  gap=+0.324
+  layer 23/34: probe=0.996  lens=0.980  gap=+0.016
+  layer 33/34: probe=0.996  lens=0.971  gap=+0.026
+  layer 34/34: probe=0.997  lens=0.970  gap=+0.027
+
+probe(last)=0.997  lens(last)=0.970  tail_probe_min=0.996
+VERDICT (single-host, pre-registered): No-Go A (info in logits -> fallback)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_email_gemma4b.log.json

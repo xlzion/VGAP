@@ -1,0 +1,21 @@
+override_qwenBASE: 571 records (206 attack) | Qwen2.5-7B-base
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:27, 12.31it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 127.42it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:01, 165.50it/s]Loading weights:  22%|██▏       | 75/339 [00:00<00:01, 171.70it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 187.86it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 202.60it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:00, 205.68it/s]Loading weights:  50%|█████     | 170/339 [00:00<00:00, 209.68it/s]Loading weights:  57%|█████▋    | 192/339 [00:01<00:00, 203.66it/s]Loading weights:  63%|██████▎   | 213/339 [00:01<00:00, 201.38it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 194.24it/s]Loading weights:  76%|███████▌  | 257/339 [00:01<00:00, 202.09it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 200.64it/s]Loading weights:  90%|████████▉ | 305/339 [00:01<00:00, 205.24it/s]Loading weights:  96%|█████████▌| 326/339 [00:01<00:00, 205.73it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 193.64it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.577 CI[0.526,0.630] | perm baseline=0.472
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+  layer  9/28: probe=0.874  lens=0.501  gap=+0.373
+  layer 19/28: probe=0.977  lens=0.486  gap=+0.491
+  layer 27/28: probe=0.981  lens=0.547  gap=+0.434
+  layer 28/28: probe=0.978  lens=0.455  gap=+0.523
+
+probe(last)=0.978  lens(last)=0.455  tail_probe_min=0.978
+VERDICT (single-host, pre-registered): Go(single-host)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_override_qwenBASE.json

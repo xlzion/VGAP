@@ -1,0 +1,77 @@
+{
+  "tag": "rjudge_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "n_layers": 32,
+  "is_gemma_norm": false,
+  "dla_additivity_err": 0.006384854496921422,
+  "s_auroc": 0.5274393995324228,
+  "n_pos_comp": 26,
+  "n_neg_comp": 18,
+  "pos_sum_auroc": 0.6272179155900086,
+  "neg_sum_auroc": 0.19171896148640336,
+  "disc_only_auroc": 0.5763627414790206,
+  "pos_sum_auroc_OOF": 0.6244001476559616,
+  "disc_only_auroc_OOF": 0.5754645010458963,
+  "null_pos_only_mean": 0.497855912390796,
+  "null_pos_only_max": 0.5138919650547558,
+  "signal_real": true,
+  "cancel_within_attack_corr": 0.08952913337086504,
+  "neg_over_pos_magnitude": 0.1587586293272078,
+  "var_pos": 2.0702273350579627,
+  "var_nondisc": 9.10096127659042,
+  "var_total": 19.71263623846122,
+  "top_positive_components": [
+    {
+      "comp": "a7",
+      "auroc": 0.7513104466592838
+    },
+    {
+      "comp": "m14",
+      "auroc": 0.7358927033345637
+    },
+    {
+      "comp": "m7",
+      "auroc": 0.6970099667774087
+    },
+    {
+      "comp": "m19",
+      "auroc": 0.6688322874369386
+    },
+    {
+      "comp": "m13",
+      "auroc": 0.6619908945490341
+    },
+    {
+      "comp": "m11",
+      "auroc": 0.6614617940199335
+    }
+  ],
+  "top_negative_components": [
+    {
+      "comp": "a0",
+      "auroc": 0.24750830564784054
+    },
+    {
+      "comp": "a5",
+      "auroc": 0.2480866248308109
+    },
+    {
+      "comp": "a10",
+      "auroc": 0.29125138427464003
+    },
+    {
+      "comp": "a2",
+      "auroc": 0.32125015380829336
+    },
+    {
+      "comp": "m9",
+      "auroc": 0.3424880029531192
+    },
+    {
+      "comp": "m12",
+      "auroc": 0.3495631844469054
+    }
+  ],
+  "verdict": "inconclusive"
+}

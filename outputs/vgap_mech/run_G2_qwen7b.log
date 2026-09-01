@@ -1,0 +1,15 @@
+rjudge_qwen7b: 300 records (158 attack); select on 150, eval on 150
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.19it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 127.75it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:01, 161.98it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 186.35it/s]Loading weights:  28%|██▊       | 96/339 [00:00<00:01, 189.34it/s]Loading weights:  34%|███▍      | 116/339 [00:00<00:01, 184.37it/s]Loading weights:  40%|████      | 137/339 [00:00<00:01, 189.18it/s]Loading weights:  47%|████▋     | 161/339 [00:00<00:00, 197.32it/s]Loading weights:  54%|█████▍    | 183/339 [00:01<00:00, 200.92it/s]Loading weights:  60%|██████    | 204/339 [00:01<00:00, 202.79it/s]Loading weights:  66%|██████▋   | 225/339 [00:01<00:00, 196.93it/s]Loading weights:  73%|███████▎  | 246/339 [00:01<00:00, 198.71it/s]Loading weights:  81%|████████▏ | 276/339 [00:01<00:00, 227.21it/s]Loading weights:  88%|████████▊ | 299/339 [00:01<00:00, 219.51it/s]Loading weights:  95%|█████████▍| 322/339 [00:01<00:00, 215.86it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 196.02it/s]
+  scan 0/300
+  scan 100/300
+  scan 200/300
+neg(cancel)=18 pos(signal)=18 random=18
+  [none        ] step0=0.465  verbal=0.517 [0.45,0.59]
+  [patch_neg   ] step0=0.469  verbal=0.523 [0.46,0.59]
+  [patch_random] step0=0.498  verbal=0.549 [0.50,0.61]
+  [patch_pos   ] step0=0.463  verbal=0.530 [0.47,0.60]
+
+VERBAL: none=0.517 -> patch_neg=0.523 (recovery +0.005); controls random=0.549 pos=0.530
+READOUT(step0): none=0.465 -> patch_neg=0.469 (recovery +0.004)
+CAUSAL HEADLINE (verbal +>=0.10 & beats controls): False
+-> outputs/vgap_mech/G2_patch_qwen7b.json

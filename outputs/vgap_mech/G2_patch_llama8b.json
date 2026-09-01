@@ -1,0 +1,49 @@
+{
+  "tag": "rjudge_llama8b",
+  "model": "llama3-8b-instruct",
+  "n_eval": 150,
+  "n_neg": 16,
+  "n_pos": 32,
+  "conditions": {
+    "none": {
+      "step0_auroc": 0.48707434480299516,
+      "verbal_auroc": [
+        0.527990729185238,
+        0.4439004278837583,
+        0.6206988768051346
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_neg": {
+      "step0_auroc": 0.4922446068817971,
+      "verbal_auroc": [
+        0.5072205384203958,
+        0.42449188803708326,
+        0.5987297200927081
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_random": {
+      "step0_auroc": 0.48653949010518815,
+      "verbal_auroc": [
+        0.5206810483152077,
+        0.43517783918702085,
+        0.6112520057051168
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_pos": {
+      "step0_auroc": 0.46371902299875206,
+      "verbal_auroc": [
+        0.5028525583883046,
+        0.4116576038509538,
+        0.5917320377963986
+      ],
+      "frac_parsed": 1.0
+    }
+  },
+  "verbal_recovery": -0.02077019076484221,
+  "readout_recovery": 0.005170262078801946,
+  "beats_controls": false,
+  "causal_headline": false
+}

@@ -1,0 +1,16 @@
+rjudge_llama8b: 571 records (301 attack)
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:25, 11.24it/s]Loading weights:   7%|▋         | 20/291 [00:00<00:03, 86.24it/s]Loading weights:  12%|█▏        | 36/291 [00:00<00:02, 114.52it/s]Loading weights:  18%|█▊        | 51/291 [00:00<00:01, 125.91it/s]Loading weights:  24%|██▎       | 69/291 [00:00<00:01, 140.50it/s]Loading weights:  30%|██▉       | 87/291 [00:00<00:01, 147.84it/s]Loading weights:  36%|███▌      | 105/291 [00:00<00:01, 153.91it/s]Loading weights:  42%|████▏     | 123/291 [00:00<00:01, 157.46it/s]Loading weights:  48%|████▊     | 141/291 [00:01<00:00, 161.25it/s]Loading weights:  55%|█████▍    | 159/291 [00:01<00:00, 161.81it/s]Loading weights:  61%|██████    | 177/291 [00:01<00:00, 161.77it/s]Loading weights:  67%|██████▋   | 195/291 [00:01<00:00, 166.24it/s]Loading weights:  74%|███████▍  | 216/291 [00:01<00:00, 176.55it/s]Loading weights:  80%|████████  | 234/291 [00:01<00:00, 176.59it/s]Loading weights:  87%|████████▋ | 252/291 [00:01<00:00, 172.59it/s]Loading weights:  93%|█████████▎| 270/291 [00:01<00:00, 167.69it/s]Loading weights:  99%|█████████▊| 287/291 [00:01<00:00, 164.44it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 153.48it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+peak L8(25%) AUROC=0.751 -> final AUROC=0.527
+within-ATTACK  corr(c_peak,c_final)=0.324 CI[0.23,0.41]  slope=31.33
+within-BENIGN  corr(c_peak,c_final)=-0.213  slope=-30.82
+NULL (shuffled labels) corr mean=0.115 CI[0.03,0.20]
+VERDICT signal-driven active suppression (attack decoupled & below benign): False
+-> outputs/vgap_mech/G1_suppression_llama8b.json

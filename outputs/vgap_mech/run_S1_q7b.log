@@ -1,0 +1,21 @@
+rjudge_qwen7b: 571 records (301 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:24, 13.52it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:02, 130.26it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:01, 162.50it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 192.73it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 196.58it/s]Loading weights:  36%|███▋      | 123/339 [00:00<00:01, 205.38it/s]Loading weights:  42%|████▏     | 144/339 [00:00<00:00, 206.07it/s]Loading weights:  49%|████▊     | 165/339 [00:00<00:00, 206.64it/s]Loading weights:  55%|█████▍    | 186/339 [00:01<00:00, 197.22it/s]Loading weights:  62%|██████▏   | 209/339 [00:01<00:00, 205.60it/s]Loading weights:  68%|██████▊   | 232/339 [00:01<00:00, 210.70it/s]Loading weights:  75%|███████▍  | 254/339 [00:01<00:00, 210.89it/s]Loading weights:  81%|████████▏ | 276/339 [00:01<00:00, 202.25it/s]Loading weights:  88%|████████▊ | 297/339 [00:01<00:00, 197.95it/s]Loading weights:  94%|█████████▍| 318/339 [00:01<00:00, 194.97it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 196.00it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.539 CI[0.489,0.586] | perm baseline=0.477
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+  layer  9/28: probe=0.965  lens=0.944  gap=+0.021
+  layer 19/28: probe=0.973  lens=0.538  gap=+0.435
+  layer 27/28: probe=0.972  lens=0.518  gap=+0.454
+  layer 28/28: probe=0.974  lens=0.552  gap=+0.422
+
+probe(last)=0.974  lens(last)=0.552  tail_probe_min=0.968
+VERDICT (single-host, pre-registered): Go(single-host)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_logitlens_rjudge_qwen7b.json

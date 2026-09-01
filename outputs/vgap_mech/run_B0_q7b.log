@@ -1,0 +1,24 @@
+rjudge_qwen7b: 571 records (301 attack / 92 URL) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:30, 10.95it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:02, 124.58it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:01, 162.82it/s]Loading weights:  23%|██▎       | 78/339 [00:00<00:01, 186.31it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 200.41it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 206.97it/s]Loading weights:  43%|████▎     | 146/339 [00:00<00:00, 208.97it/s]Loading weights:  50%|████▉     | 168/339 [00:00<00:00, 206.93it/s]Loading weights:  56%|█████▌    | 190/339 [00:01<00:00, 202.14it/s]Loading weights:  62%|██████▏   | 211/339 [00:01<00:00, 195.98it/s]Loading weights:  69%|██████▊   | 233/339 [00:01<00:00, 192.28it/s]Loading weights:  76%|███████▌  | 256/339 [00:01<00:00, 200.42it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 210.18it/s]Loading weights:  90%|████████▉ | 304/339 [00:01<00:00, 210.27it/s]Loading weights:  97%|█████████▋| 328/339 [00:01<00:00, 209.41it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 194.06it/s]
+readout direction d over 10 digit tokens; |d|=1.000
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+additivity |err|=0.0172 (should be ~0)
+c_auroc: L0=0.500 mid=0.713 last=0.520 (must mirror S1 curve B: mid high, last low)
+top erasers (most negative attack-benign push on readout):
+   attn L26  dsep=-0.522
+   attn L27  dsep=-0.453
+   mlp L26  dsep=-0.296
+   attn L22  dsep=-0.230
+   attn L25  dsep=-0.154
+   mlp L12  dsep=-0.108
+   attn L16  dsep=-0.097
+   mlp L18  dsep=-0.097
+kappa(3)=0.61  kappa(10)=0.98 -> concentrated
+late erasure  injection=-2.088  vs  URL-control=-0.285 (control should erase far less -> injection-specific)
+-> outputs/vgap_mech/B0_erasure_attrib_qwen7b.json

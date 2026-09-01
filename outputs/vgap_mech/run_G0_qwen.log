@@ -1,0 +1,18 @@
+rjudge_qwen7b: 571 records (301 attack)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.17it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 125.55it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 155.94it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 168.92it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 190.44it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 200.63it/s]Loading weights:  43%|████▎     | 145/339 [00:00<00:00, 199.88it/s]Loading weights:  49%|████▉     | 166/339 [00:00<00:00, 199.14it/s]Loading weights:  55%|█████▌    | 187/339 [00:01<00:00, 192.65it/s]Loading weights:  62%|██████▏   | 209/339 [00:01<00:00, 200.08it/s]Loading weights:  68%|██████▊   | 232/339 [00:01<00:00, 198.56it/s]Loading weights:  76%|███████▌  | 257/339 [00:01<00:00, 210.19it/s]Loading weights:  83%|████████▎ | 281/339 [00:01<00:00, 213.12it/s]Loading weights:  90%|████████▉ | 305/339 [00:01<00:00, 214.41it/s]Loading weights:  97%|█████████▋| 329/339 [00:01<00:00, 212.30it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 195.36it/s]
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+DLA additivity |err|=0.0128 (should be ~0)  | total s AUROC=0.520 (should be ~chance)
+pos-discriminative comps: 18  (their sum AUROC=0.752)
+neg-discriminative comps: 21  (their sum AUROC=0.371)
+cancellation test: neg/pos magnitude=2.42, within-attack corr(neg,pos)=0.835 (< -0.3 = cancel)
+drowning test: var_pos=0.648 var_nondisc=122.150 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('m10', 0.82), ('a5', 0.8), ('a7', 0.77), ('m3', 0.75), ('a17', 0.74), ('a13', 0.72)]
+top -disc comps: [('m12', 0.1), ('m0', 0.23), ('m2', 0.28), ('a9', 0.3), ('a22', 0.32), ('m19', 0.33)]
+VERDICT (single-host): inconclusive  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_qwen7b.json

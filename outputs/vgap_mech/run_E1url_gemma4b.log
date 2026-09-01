@@ -1,0 +1,4 @@
+urlverbal_gemma4b: 571 records | concepts=['url']
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 18/883 [00:00<00:05, 172.08it/s]Loading weights:  10%|▉         | 88/883 [00:00<00:01, 473.22it/s]Loading weights:  18%|█▊        | 160/883 [00:00<00:01, 578.82it/s]Loading weights:  27%|██▋       | 235/883 [00:00<00:01, 645.36it/s]Loading weights:  34%|███▍      | 304/883 [00:00<00:00, 660.59it/s]Loading weights:  43%|████▎     | 381/883 [00:00<00:00, 688.27it/s]Loading weights:  53%|█████▎    | 467/883 [00:00<00:00, 743.57it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1088.71it/s]
+  [url       ] verbal AUROC=0.920 [0.88,0.95]  (n_pos=92)
+-> outputs/vgap_mech/E1_verbal_url_gemma4b.json

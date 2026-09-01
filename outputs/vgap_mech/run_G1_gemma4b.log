@@ -1,0 +1,15 @@
+rjudge_gemma4b: 571 records (301 attack)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   1%|▏         | 13/883 [00:00<00:06, 128.93it/s]Loading weights:   8%|▊         | 70/883 [00:00<00:02, 376.92it/s]Loading weights:  15%|█▌        | 134/883 [00:00<00:01, 481.58it/s]Loading weights:  22%|██▏       | 191/883 [00:00<00:01, 515.54it/s]Loading weights:  29%|██▊       | 252/883 [00:00<00:01, 545.86it/s]Loading weights:  36%|███▌      | 317/883 [00:00<00:00, 580.29it/s]Loading weights:  43%|████▎     | 381/883 [00:00<00:00, 595.12it/s]Loading weights:  50%|████▉     | 441/883 [00:00<00:00, 582.56it/s]Loading weights:  88%|████████▊ | 775/883 [00:00<00:00, 1417.24it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 924.20it/s] 
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+peak L0(0%) AUROC=0.619 -> final AUROC=0.571
+within-ATTACK  corr(c_peak,c_final)=0.145 CI[0.02,0.27]  slope=3.28
+within-BENIGN  corr(c_peak,c_final)=0.848  slope=16.38
+NULL (shuffled labels) corr mean=0.614 CI[0.57,0.66]
+VERDICT signal-driven active suppression (attack decoupled & below benign): True
+-> outputs/vgap_mech/G1_suppression_gemma4b.json

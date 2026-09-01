@@ -1,0 +1,77 @@
+{
+  "tag": "rjudge_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "n_layers": 34,
+  "is_gemma_norm": true,
+  "dla_additivity_err": 0.0303394841593633,
+  "s_auroc": 0.5708256429186662,
+  "n_pos_comp": 23,
+  "n_neg_comp": 22,
+  "pos_sum_auroc": 0.6330872400639842,
+  "neg_sum_auroc": 0.31677125630614,
+  "disc_only_auroc": 0.5426848775685985,
+  "pos_sum_auroc_OOF": 0.6159222345268857,
+  "disc_only_auroc_OOF": 0.5134859111603297,
+  "null_pos_only_mean": 0.5003519133751693,
+  "null_pos_only_max": 0.5239079611172635,
+  "signal_real": true,
+  "cancel_within_attack_corr": 0.1806998486205552,
+  "neg_over_pos_magnitude": 0.1548780452558376,
+  "var_pos": 3.0226877175577176,
+  "var_nondisc": 1.2577880187771144,
+  "var_total": 3.761801019566001,
+  "top_positive_components": [
+    {
+      "comp": "m0",
+      "auroc": 0.774098683401009
+    },
+    {
+      "comp": "a6",
+      "auroc": 0.7661498708010336
+    },
+    {
+      "comp": "m12",
+      "auroc": 0.7202903900578319
+    },
+    {
+      "comp": "a9",
+      "auroc": 0.7020179648086626
+    },
+    {
+      "comp": "m15",
+      "auroc": 0.6805586317214223
+    },
+    {
+      "comp": "a20",
+      "auroc": 0.6734834502276362
+    }
+  ],
+  "top_negative_components": [
+    {
+      "comp": "m1",
+      "auroc": 0.16028054632705793
+    },
+    {
+      "comp": "a19",
+      "auroc": 0.16125261474098682
+    },
+    {
+      "comp": "m11",
+      "auroc": 0.21453180755506338
+    },
+    {
+      "comp": "a11",
+      "auroc": 0.2542512612280054
+    },
+    {
+      "comp": "a27",
+      "auroc": 0.27571059431524547
+    },
+    {
+      "comp": "m5",
+      "auroc": 0.3055124892334195
+    }
+  ],
+  "verdict": "inconclusive"
+}

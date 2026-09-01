@@ -1,0 +1,21 @@
+email_qwen7b: 571 records (353 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.37it/s]Loading weights:   8%|▊         | 26/339 [00:00<00:02, 121.90it/s]Loading weights:  16%|█▌        | 53/339 [00:00<00:01, 171.66it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 185.17it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 184.97it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 196.30it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:00, 198.10it/s]Loading weights:  51%|█████     | 172/339 [00:00<00:00, 202.99it/s]Loading weights:  58%|█████▊    | 196/339 [00:01<00:00, 212.98it/s]Loading weights:  64%|██████▍   | 218/339 [00:01<00:00, 213.36it/s]Loading weights:  71%|███████   | 240/339 [00:01<00:00, 204.03it/s]Loading weights:  77%|███████▋  | 261/339 [00:01<00:00, 198.39it/s]Loading weights:  83%|████████▎ | 281/339 [00:01<00:00, 197.60it/s]Loading weights:  90%|████████▉ | 305/339 [00:01<00:00, 202.49it/s]Loading weights:  97%|█████████▋| 328/339 [00:01<00:00, 209.99it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 194.50it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.993 CI[0.987,0.997] | perm baseline=0.504
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+  layer  9/28: probe=0.969  lens=0.491  gap=+0.478
+  layer 19/28: probe=0.998  lens=0.378  gap=+0.620
+  layer 27/28: probe=0.995  lens=0.991  gap=+0.003
+  layer 28/28: probe=0.995  lens=0.992  gap=+0.003
+
+probe(last)=0.995  lens(last)=0.992  tail_probe_min=0.994
+VERDICT (single-host, pre-registered): No-Go A (info in logits -> fallback)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_email_qwen7b.json

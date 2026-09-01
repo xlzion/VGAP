@@ -1,0 +1,23 @@
+{
+  "tag": "rjudge_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "L_peak": 8,
+  "L_peak_frac": 0.25,
+  "peak_auroc": 0.7514950166112956,
+  "final_auroc": 0.5274393995324228,
+  "corr_peak_final_attack": 0.3241470323722448,
+  "corr_peak_final_benign": -0.21268543348215535,
+  "corr_attack_ci": [
+    0.22567145583942566,
+    0.4148298563847487
+  ],
+  "slope_attack": 31.33252952615059,
+  "slope_benign": -30.823020938813638,
+  "null_corr_mean": 0.1153344423446071,
+  "null_corr_ci": [
+    0.026050684991538956,
+    0.19818206005141126
+  ],
+  "verdict_signal_driven_suppression": false
+}

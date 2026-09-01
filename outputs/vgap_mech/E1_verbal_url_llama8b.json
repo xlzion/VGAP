@@ -1,0 +1,17 @@
+{
+  "tag": "urlverbal_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "verbal": {
+    "url": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9227330489243897,
+        0.8962206135971681,
+        0.9461993396568938
+      ],
+      "n_pos": 92,
+      "frac_parsed": 0.9141856392294221
+    }
+  }
+}

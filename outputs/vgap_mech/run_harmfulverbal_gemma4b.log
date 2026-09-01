@@ -1,0 +1,4 @@
+harmfulverbal_gemma4b: 571 records | concepts=['harmful']
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   3%|▎         | 23/883 [00:00<00:03, 225.85it/s]Loading weights:  11%|█         | 95/883 [00:00<00:01, 513.13it/s]Loading weights:  19%|█▉        | 167/883 [00:00<00:01, 605.34it/s]Loading weights:  27%|██▋       | 237/883 [00:00<00:01, 638.81it/s]Loading weights:  36%|███▌      | 315/883 [00:00<00:00, 671.43it/s]Loading weights:  43%|████▎     | 383/883 [00:00<00:00, 657.81it/s]Loading weights:  52%|█████▏    | 455/883 [00:00<00:00, 674.11it/s]Loading weights:  93%|█████████▎| 822/883 [00:00<00:00, 1602.87it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1056.76it/s]
+  [harmful   ] AUROC=0.508 [0.46,0.56] | parsed-only=0.508 | no-number pos/neg=0.00/0.00
+-> outputs/vgap_mech/E1_verbal_harmful_gemma4b.json

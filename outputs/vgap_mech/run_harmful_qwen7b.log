@@ -1,0 +1,21 @@
+harmful_qwen7b: 571 records (301 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:29, 11.27it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 119.29it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:02, 140.43it/s]Loading weights:  23%|██▎       | 78/339 [00:00<00:01, 178.32it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 183.97it/s]Loading weights:  37%|███▋      | 125/339 [00:00<00:01, 203.16it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:00, 203.09it/s]Loading weights:  51%|█████     | 172/339 [00:00<00:00, 213.42it/s]Loading weights:  58%|█████▊    | 197/339 [00:01<00:00, 218.63it/s]Loading weights:  65%|██████▌   | 221/339 [00:01<00:00, 215.00it/s]Loading weights:  72%|███████▏  | 243/339 [00:01<00:00, 214.97it/s]Loading weights:  78%|███████▊  | 265/339 [00:01<00:00, 215.16it/s]Loading weights:  85%|████████▍ | 287/339 [00:01<00:00, 207.22it/s]Loading weights:  91%|█████████ | 308/339 [00:01<00:00, 204.12it/s]Loading weights:  97%|█████████▋| 330/339 [00:01<00:00, 198.18it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 195.41it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.488 CI[0.438,0.536] | perm baseline=0.513
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+  layer  9/28: probe=0.964  lens=0.929  gap=+0.035
+  layer 19/28: probe=0.973  lens=0.554  gap=+0.420
+  layer 27/28: probe=0.968  lens=0.478  gap=+0.491
+  layer 28/28: probe=0.966  lens=0.529  gap=+0.437
+
+probe(last)=0.966  lens(last)=0.529  tail_probe_min=0.966
+VERDICT (single-host, pre-registered): Go(single-host)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_harmful_qwen7b.json

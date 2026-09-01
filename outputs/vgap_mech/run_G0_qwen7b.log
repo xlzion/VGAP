@@ -1,0 +1,20 @@
+rjudge_qwen7b: 571 records (301 attack)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:52,  6.50it/s]Loading weights:   8%|▊         | 26/339 [00:00<00:02, 118.27it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 164.96it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 175.22it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 189.08it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 197.57it/s]Loading weights:  43%|████▎     | 145/339 [00:00<00:00, 200.10it/s]Loading weights:  49%|████▉     | 166/339 [00:00<00:00, 199.80it/s]Loading weights:  55%|█████▌    | 187/339 [00:01<00:00, 193.41it/s]Loading weights:  62%|██████▏   | 209/339 [00:01<00:00, 200.27it/s]Loading weights:  68%|██████▊   | 231/339 [00:01<00:00, 195.91it/s]Loading weights:  77%|███████▋  | 261/339 [00:01<00:00, 225.17it/s]Loading weights:  84%|████████▍ | 285/339 [00:01<00:00, 229.29it/s]Loading weights:  91%|█████████ | 309/339 [00:01<00:00, 228.91it/s]Loading weights:  98%|█████████▊| 333/339 [00:01<00:00, 224.65it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 200.14it/s]
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+DLA additivity |err|=0.0128 (should be ~0)  | total s AUROC=0.520 (should be ~chance)
+pos-discriminative comps: 18  (their sum AUROC=0.752)
+neg-discriminative comps: 21  (their sum AUROC=0.371)
+DECISIVE (OOF de-biased): pos-only AUROC=0.674  disc-only(pos+neg) AUROC=0.482
+NULL (label-permutation, same OOF select+sum): pos-only mean=0.491 max=0.512  -> signal_real=True (pos_oof must exceed null_max by >=0.05)
+cancellation test: neg/pos magnitude=2.42, within-attack corr(neg,pos)=0.835 (< -0.3 = cancel)
+drowning test: var_pos=0.648 var_nondisc=122.150 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('m10', 0.82), ('a5', 0.8), ('a7', 0.77), ('m3', 0.75), ('a17', 0.74), ('a13', 0.72)]
+top -disc comps: [('m12', 0.1), ('m0', 0.23), ('m2', 0.28), ('a9', 0.3), ('a22', 0.32), ('m19', 0.33)]
+VERDICT (single-host): cancellation  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_qwen7b.json

@@ -1,0 +1,59 @@
+{
+  "tag": "rjudge_qwen7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "n": 571,
+  "verbal": {
+    "injection": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.5509351544235266,
+        0.5134559185431279,
+        0.5866482096714654
+      ],
+      "n_pos": 301,
+      "parse_fail_pos": 0.0,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.5509351544235266,
+      "frac_no_number": 0.0
+    },
+    "harmful": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.4957425864402609,
+        0.4487629198966408,
+        0.5397783622492925
+      ],
+      "n_pos": 301,
+      "parse_fail_pos": 0.0,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.4957425864402609,
+      "frac_no_number": 0.0
+    },
+    "override": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9928780422928581,
+        0.9850804628275036,
+        0.9983242452453783
+      ],
+      "n_pos": 206,
+      "parse_fail_pos": 0.0,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.9928780422928581,
+      "frac_no_number": 0.0
+    },
+    "email": {
+      "type": "content",
+      "verbal_auroc": [
+        0.9835940951737401,
+        0.9740617771655795,
+        0.9919060412714088
+      ],
+      "n_pos": 353,
+      "parse_fail_pos": 0.0,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.9835940951737401,
+      "frac_no_number": 0.0
+    }
+  }
+}

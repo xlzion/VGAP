@@ -1,0 +1,23 @@
+{
+  "tag": "rjudge_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "L_peak": 0,
+  "L_peak_frac": 0.0,
+  "peak_auroc": 0.6188753537590747,
+  "final_auroc": 0.5708379475821337,
+  "corr_peak_final_attack": 0.14505330009064882,
+  "corr_peak_final_benign": 0.8476591944285422,
+  "corr_attack_ci": [
+    0.01644241937163636,
+    0.27030622769122087
+  ],
+  "slope_attack": 3.2790891519002274,
+  "slope_benign": 16.378681483165664,
+  "null_corr_mean": 0.6139527773449545,
+  "null_corr_ci": [
+    0.5687251928804903,
+    0.6630955525185165
+  ],
+  "verdict_signal_driven_suppression": true
+}

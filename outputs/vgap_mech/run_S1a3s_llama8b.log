@@ -1,0 +1,28 @@
+a3s_llama8b: 1150 records (726 attack) | llama3-8b-instruct
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:24, 11.63it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:02, 96.01it/s]Loading weights:  14%|█▎        | 40/291 [00:00<00:01, 126.37it/s]Loading weights:  20%|█▉        | 58/291 [00:00<00:01, 142.22it/s]Loading weights:  26%|██▌       | 76/291 [00:00<00:01, 153.36it/s]Loading weights:  32%|███▏      | 94/291 [00:00<00:01, 157.07it/s]Loading weights:  38%|███▊      | 112/291 [00:00<00:01, 160.98it/s]Loading weights:  45%|████▍     | 130/291 [00:00<00:00, 162.54it/s]Loading weights:  51%|█████     | 148/291 [00:01<00:00, 164.05it/s]Loading weights:  57%|█████▋    | 166/291 [00:01<00:00, 163.23it/s]Loading weights:  64%|██████▎   | 185/291 [00:01<00:00, 169.41it/s]Loading weights:  70%|██████▉   | 203/291 [00:01<00:00, 169.44it/s]Loading weights:  76%|███████▌  | 221/291 [00:01<00:00, 170.32it/s]Loading weights:  82%|████████▏ | 239/291 [00:01<00:00, 167.77it/s]Loading weights:  88%|████████▊ | 257/291 [00:01<00:00, 165.86it/s]Loading weights:  95%|█████████▍| 275/291 [00:01<00:00, 162.68it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 155.87it/s]
+expected-number score over 211 pure-digit tokens (0-100)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/1150
+  100/1150
+  200/1150
+  300/1150
+  400/1150
+  500/1150
+  600/1150
+  700/1150
+  800/1150
+  900/1150
+  1000/1150
+  1100/1150
+
+STEP 0 (final-logit expected-number) AUROC=0.627 CI[0.594,0.660] | perm baseline=0.513
+  layer  0/32: probe=0.500  lens=0.500  gap=+0.000
+  layer 11/32: probe=0.814  lens=0.567  gap=+0.248
+  layer 22/32: probe=0.803  lens=0.506  gap=+0.297
+  layer 31/32: probe=0.789  lens=0.629  gap=+0.160
+  layer 32/32: probe=0.783  lens=0.622  gap=+0.162
+
+probe(last)=0.783  lens(last)=0.622  tail_probe_min=0.783
+VERDICT (single-host, pre-registered): grey
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_logitlens_a3s_llama8b.json

@@ -1,0 +1,21 @@
+override_qwen7b: 571 records (206 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:27, 12.05it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 124.89it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 161.34it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 166.85it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 186.80it/s]Loading weights:  36%|███▋      | 123/339 [00:00<00:01, 178.20it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:00, 196.90it/s]Loading weights:  51%|█████     | 172/339 [00:00<00:00, 202.21it/s]Loading weights:  58%|█████▊    | 197/339 [00:01<00:00, 205.41it/s]Loading weights:  65%|██████▍   | 220/339 [00:01<00:00, 199.83it/s]Loading weights:  72%|███████▏  | 244/339 [00:01<00:00, 210.60it/s]Loading weights:  79%|███████▉  | 268/339 [00:01<00:00, 200.67it/s]Loading weights:  86%|████████▋ | 293/339 [00:01<00:00, 197.30it/s]Loading weights:  94%|█████████▍| 318/339 [00:01<00:00, 205.30it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 192.65it/s]
+expected-number score over 10 pure-digit tokens (0-100)
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.998 CI[0.995,1.000] | perm baseline=0.503
+  layer  0/28: probe=0.500  lens=0.500  gap=+0.000
+  layer  9/28: probe=0.993  lens=0.445  gap=+0.548
+  layer 19/28: probe=1.000  lens=0.436  gap=+0.564
+  layer 27/28: probe=1.000  lens=0.998  gap=+0.002
+  layer 28/28: probe=1.000  lens=0.997  gap=+0.003
+
+probe(last)=1.000  lens(last)=0.997  tail_probe_min=1.000
+VERDICT (single-host, pre-registered): No-Go A (info in logits -> fallback)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/S1_concept_override_qwen7b.json

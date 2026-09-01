@@ -1,0 +1,23 @@
+{
+  "tag": "rjudge_qwen7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "n": 571,
+  "L_peak": 12,
+  "L_peak_frac": 0.42857142857142855,
+  "peak_auroc": 0.8865510028300725,
+  "final_auroc": 0.5197612895287315,
+  "corr_peak_final_attack": 0.07006229092205915,
+  "corr_peak_final_benign": -0.3277124174079758,
+  "corr_attack_ci": [
+    -0.06623801263041149,
+    0.20467119090542402
+  ],
+  "slope_attack": 15.5419628993938,
+  "slope_benign": -68.29169974140669,
+  "null_corr_mean": -0.08794775470726324,
+  "null_corr_ci": [
+    -0.15347896997229832,
+    -0.004935894277864773
+  ],
+  "verdict_signal_driven_suppression": false
+}

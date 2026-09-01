@@ -1,0 +1,34 @@
+{
+  "tag": "rjudge_gemma4b",
+  "model": "gemma-3-4b-it",
+  "n": 571,
+  "probe_reference": 0.96,
+  "interventions": {
+    "zeroshot": {
+      "verbal_auroc": [
+        0.5377630121816168,
+        0.49152962347729795,
+        0.583567583364095
+      ],
+      "frac_nonzero": 1.0
+    },
+    "cot": {
+      "verbal_auroc": [
+        0.45307616586686345,
+        0.4080821643903039,
+        0.49807262827611665
+      ],
+      "frac_nonzero": 0.9982486865148862
+    },
+    "fewshot": {
+      "verbal_auroc": [
+        0.6277039497969731,
+        0.5848966408268734,
+        0.6742627968500061
+      ],
+      "frac_nonzero": 1.0
+    }
+  },
+  "best_verbal_auroc": 0.6277039497969731,
+  "not_fixable_by_prompting": true
+}

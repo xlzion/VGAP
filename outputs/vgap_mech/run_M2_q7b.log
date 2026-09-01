@@ -1,0 +1,21 @@
+rjudge_qwen7b: 571 records (301 attack) | Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:24, 13.53it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:02, 130.10it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 161.54it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 187.31it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 192.68it/s]Loading weights:  36%|███▌      | 122/339 [00:00<00:01, 199.17it/s]Loading weights:  42%|████▏     | 144/339 [00:00<00:00, 204.66it/s]Loading weights:  49%|████▊     | 165/339 [00:00<00:00, 205.81it/s]Loading weights:  55%|█████▍    | 186/339 [00:01<00:00, 197.35it/s]Loading weights:  62%|██████▏   | 209/339 [00:01<00:00, 196.78it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 201.88it/s]Loading weights:  76%|███████▌  | 257/339 [00:01<00:00, 208.12it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 204.72it/s]Loading weights:  90%|████████▉ | 305/339 [00:01<00:00, 211.59it/s]Loading weights:  97%|█████████▋| 328/339 [00:01<00:00, 207.35it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 196.72it/s]
+  [zeroshot] 0/571
+  [zeroshot] 150/571
+  [zeroshot] 300/571
+  [zeroshot] 450/571
+  [zeroshot] verbal AUROC=0.551 CI[0.513,0.587]  (probe ref ~0.96)
+  [cot] 0/571
+  [cot] 150/571
+  [cot] 300/571
+  [cot] 450/571
+  [cot] verbal AUROC=0.432 CI[0.384,0.478]  (probe ref ~0.96)
+  [fewshot] 0/571
+  [fewshot] 150/571
+  [fewshot] 300/571
+  [fewshot] 450/571
+  [fewshot] verbal AUROC=0.475 CI[0.429,0.518]  (probe ref ~0.96)
+
+best verbal across interventions = 0.551 | probe ~0.96
+NOT-FIXABLE-BY-PROMPTING (best verbal < 0.75): True
+-> outputs/vgap_mech/M2_intervention_rjudge_qwen7b.json

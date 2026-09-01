@@ -1,0 +1,49 @@
+{
+  "tag": "rjudge_qwen7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "n_eval": 150,
+  "n_neg": 18,
+  "n_pos": 18,
+  "conditions": {
+    "none": {
+      "step0_auroc": 0.46496701729363515,
+      "verbal_auroc": [
+        0.5174719201283652,
+        0.45257398823319667,
+        0.5869406311285434
+      ],
+      "frac_parsed": 0.9733333333333334
+    },
+    "patch_neg": {
+      "step0_auroc": 0.46924585487609194,
+      "verbal_auroc": [
+        0.5226421822071671,
+        0.45765733642360495,
+        0.5893519343911571
+      ],
+      "frac_parsed": 0.98
+    },
+    "patch_random": {
+      "step0_auroc": 0.4984845783562133,
+      "verbal_auroc": [
+        0.5492957746478873,
+        0.4988389195935104,
+        0.6061887145658762
+      ],
+      "frac_parsed": 1.0
+    },
+    "patch_pos": {
+      "step0_auroc": 0.46336245320021396,
+      "verbal_auroc": [
+        0.5299518630771974,
+        0.4669281511855946,
+        0.598145837047602
+      ],
+      "frac_parsed": 0.9733333333333334
+    }
+  },
+  "verbal_recovery": 0.0051702620788018905,
+  "readout_recovery": 0.004278837582456785,
+  "beats_controls": false,
+  "causal_headline": false
+}

@@ -1,0 +1,15 @@
+erasers=[('attn', 26), ('attn', 27), ('mlp', 26)]
+writers(noneraser control)=[('mlp', 27), ('mlp', 24), ('mlp', 23)]
+random control=[('mlp', 7), ('mlp', 1), ('mlp', 17)]
+rjudge_qwen7b: 220 records (119 attack / 37 URL)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.32it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 128.07it/s]Loading weights:  15%|█▌        | 51/339 [00:00<00:01, 159.34it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 174.50it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 186.02it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 200.60it/s]Loading weights:  43%|████▎     | 145/339 [00:00<00:00, 202.01it/s]Loading weights:  49%|████▉     | 166/339 [00:00<00:00, 200.50it/s]Loading weights:  55%|█████▌    | 187/339 [00:01<00:00, 194.27it/s]Loading weights:  61%|██████▏   | 208/339 [00:01<00:00, 197.50it/s]Loading weights:  68%|██████▊   | 232/339 [00:01<00:00, 208.59it/s]Loading weights:  75%|███████▍  | 254/339 [00:01<00:00, 205.53it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 220.50it/s]Loading weights:  90%|████████▉ | 304/339 [00:01<00:00, 211.48it/s]Loading weights:  97%|█████████▋| 329/339 [00:01<00:00, 214.64it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 197.11it/s]
+benign-mean computed over 101 benign records
+  [none     ] step0=0.522  verbal=0.540  parsed=0.97
+  [eraser   ] step0=0.529  verbal=0.575  parsed=0.98
+  [random   ] step0=0.522  verbal=0.522  parsed=0.97
+  [noneraser] step0=0.488  verbal=0.505  parsed=1.00
+
+verbal: none=0.540 -> eraser=0.575 (recovery +0.035); controls random=0.522 noneraser=0.505
+readout(step0): none=0.522 -> eraser=0.529 (recovery +0.007)
+HEADLINE gate (verbal +>=0.15 & beats both controls): False  | partial(readout-only): False
+-> outputs/vgap_mech/B1_ablation_qwen7b.json

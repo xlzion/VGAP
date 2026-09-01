@@ -1,0 +1,15 @@
+rjudge_qwen7b: 571 records (301 attack)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:26, 12.51it/s]Loading weights:   8%|▊         | 27/339 [00:00<00:02, 117.27it/s]Loading weights:  15%|█▍        | 50/339 [00:00<00:01, 155.13it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 176.12it/s]Loading weights:  29%|██▉       | 100/339 [00:00<00:01, 187.22it/s]Loading weights:  36%|███▋      | 123/339 [00:00<00:01, 197.87it/s]Loading weights:  42%|████▏     | 144/339 [00:00<00:00, 200.64it/s]Loading weights:  49%|████▊     | 165/339 [00:00<00:00, 202.93it/s]Loading weights:  55%|█████▍    | 186/339 [00:01<00:00, 195.25it/s]Loading weights:  62%|██████▏   | 210/339 [00:01<00:00, 198.91it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 200.94it/s]Loading weights:  76%|███████▌  | 257/339 [00:01<00:00, 208.21it/s]Loading weights:  86%|████████▌ | 292/339 [00:01<00:00, 230.93it/s]Loading weights:  93%|█████████▎| 316/339 [00:01<00:00, 230.90it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 200.38it/s]
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+peak L12(43%) AUROC=0.887 -> final AUROC=0.520
+within-ATTACK  corr(c_peak,c_final)=0.070 CI[-0.07,0.20]  slope=15.54
+within-BENIGN  corr(c_peak,c_final)=-0.328  slope=-68.29
+NULL (shuffled labels) corr mean=-0.088 CI[-0.15,-0.00]
+VERDICT signal-driven active suppression (attack decoupled & below benign): False
+-> outputs/vgap_mech/G1_suppression_qwen7b.json

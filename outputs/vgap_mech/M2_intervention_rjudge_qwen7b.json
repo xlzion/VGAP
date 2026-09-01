@@ -1,0 +1,34 @@
+{
+  "tag": "rjudge_qwen7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "n": 571,
+  "probe_reference": 0.96,
+  "interventions": {
+    "zeroshot": {
+      "verbal_auroc": [
+        0.5509351544235266,
+        0.5134559185431279,
+        0.5866482096714654
+      ],
+      "frac_nonzero": 0.9737302977232924
+    },
+    "cot": {
+      "verbal_auroc": [
+        0.4319982773471146,
+        0.384406607604282,
+        0.4779640396210163
+      ],
+      "frac_nonzero": 0.8633975481611208
+    },
+    "fewshot": {
+      "verbal_auroc": [
+        0.47452934662236995,
+        0.4291572843607727,
+        0.5177497846683893
+      ],
+      "frac_nonzero": 0.9964973730297724
+    }
+  },
+  "best_verbal_auroc": 0.5509351544235266,
+  "not_fixable_by_prompting": true
+}

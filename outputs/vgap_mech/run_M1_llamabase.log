@@ -1,0 +1,22 @@
+rjudge_llama8b_BASE: 571 records (301 attack) | llama3-8b
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:16, 18.01it/s]Loading weights:  11%|█         | 31/291 [00:00<00:01, 163.75it/s]Loading weights:  18%|█▊        | 51/291 [00:00<00:01, 178.15it/s]Loading weights:  26%|██▋       | 77/291 [00:00<00:01, 208.46it/s]Loading weights:  34%|███▍      | 99/291 [00:00<00:00, 203.49it/s]Loading weights:  42%|████▏     | 121/291 [00:00<00:00, 207.35it/s]Loading weights:  50%|████▉     | 145/291 [00:00<00:00, 216.65it/s]Loading weights:  59%|█████▉    | 171/291 [00:00<00:00, 226.07it/s]Loading weights:  67%|██████▋   | 194/291 [00:00<00:00, 214.93it/s]Loading weights:  76%|███████▌  | 220/291 [00:01<00:00, 226.17it/s]Loading weights:  84%|████████▎ | 243/291 [00:01<00:00, 223.30it/s]Loading weights:  91%|█████████▏| 266/291 [00:01<00:00, 219.33it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 211.13it/s]
+expected-number score over 211 pure-digit tokens (0-100)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+STEP 0 (final-logit expected-number) AUROC=0.606 CI[0.560,0.654] | perm baseline=0.499
+  layer  0/32: probe=0.500  lens=0.500  gap=+0.000
+  layer 11/32: probe=0.972  lens=0.618  gap=+0.353
+  layer 22/32: probe=0.970  lens=0.309  gap=+0.662
+  layer 31/32: probe=0.967  lens=0.475  gap=+0.492
+  layer 32/32: probe=0.962  lens=0.378  gap=+0.584
+
+probe(last)=0.962  lens(last)=0.378  tail_probe_min=0.962
+VERDICT (single-host, pre-registered): Go(single-host)
+READ: Step0 high (>=0.85) => No-Go A (gap is decoding/calibration, fallback §3.3). Step0/lens_last low (<=0.75) with probe ~0.96 => chain-break real => Go, replicate on 3 hosts.
+-> outputs/vgap_mech/M1_S1_rjudge_llama8b_base.json

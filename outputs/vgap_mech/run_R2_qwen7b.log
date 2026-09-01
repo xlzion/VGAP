@@ -1,0 +1,19 @@
+rjudge_qwen7b: 571 records (301 attack)
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   8%|▊         | 26/339 [00:00<00:01, 239.04it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 215.40it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 218.15it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 217.94it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:00, 217.57it/s]Loading weights:  43%|████▎     | 146/339 [00:00<00:00, 216.33it/s]Loading weights:  50%|████▉     | 168/339 [00:00<00:00, 212.41it/s]Loading weights:  56%|█████▌    | 190/339 [00:00<00:00, 206.17it/s]Loading weights:  62%|██████▏   | 211/339 [00:01<00:00, 198.28it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 197.89it/s]Loading weights:  76%|███████▌  | 256/339 [00:01<00:00, 201.92it/s]Loading weights:  83%|████████▎ | 280/339 [00:01<00:00, 210.24it/s]Loading weights:  90%|████████▉ | 305/339 [00:01<00:00, 220.82it/s]Loading weights:  97%|█████████▋| 329/339 [00:01<00:00, 219.94it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 216.37it/s]
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+  L 0: frozen=0.500  tuned=0.547
+  L 9: frozen=0.771  tuned=0.483
+  L14: frozen=0.814  tuned=0.527
+  L19: frozen=0.538  tuned=0.544
+  L28: frozen=0.552  tuned=0.536
+
+frozen lens: peak 0.901@L12(43%) -> last 0.552
+tuned  lens: peak 0.774@L2(7%) -> last 0.536
+rotation ruled out (tuned mid-peak real): True
+cancellation confirmed (both readouts ~chance at output): True
+-> outputs/vgap_mech/R2_tunedlens_qwen7b.json

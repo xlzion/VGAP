@@ -1,0 +1,69 @@
+rjudge_gemma4b: 571 records (301 attack)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 18/883 [00:00<00:05, 169.21it/s]Loading weights:   9%|▉         | 83/883 [00:00<00:01, 433.04it/s]Loading weights:  17%|█▋        | 146/883 [00:00<00:01, 516.93it/s]Loading weights:  23%|██▎       | 200/883 [00:00<00:01, 517.41it/s]Loading weights:  30%|██▉       | 264/883 [00:00<00:01, 556.75it/s]Loading weights:  37%|███▋      | 330/883 [00:00<00:00, 588.95it/s]Loading weights:  45%|████▍     | 393/883 [00:00<00:00, 587.57it/s]Loading weights:  57%|█████▋    | 502/883 [00:00<00:00, 740.14it/s]Loading weights:  99%|█████████▉| 872/883 [00:00<00:00, 1642.38it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 948.37it/s] 
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+  L 0: frozen=0.500  tuned=0.472
+  L11: frozen=0.567  tuned=0.534
+  L17: frozen=0.643  tuned=0.522
+  L23: frozen=0.504  tuned=0.523
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=4.96528e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=5.53808e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=4.19181e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.28051e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.6118e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=5.13999e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=5.37316e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=5.563e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=2.50819e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=2.75825e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=4.35475e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.86764e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.58637e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=1.80556e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=2.04057e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.24338e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.0201e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.02454e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=1.45161e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=1.58092e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=3.13036e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=2.63242e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=2.45575e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=1.23995e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+/home/user/anaconda3/envs/qwen/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:250: LinAlgWarning: Ill-conditioned matrix (rcond=1.32139e-08): result may not be accurate.
+  dual_coef = linalg.solve(K, y, assume_a="pos", overwrite_a=False)
+  L34: frozen=0.529  tuned=0.527
+
+frozen lens: peak 0.754@L1(3%) -> last 0.529
+tuned  lens: peak 0.537@L4(12%) -> last 0.527
+rotation ruled out (tuned mid-peak real): False
+cancellation confirmed (both readouts ~chance at output): True
+-> outputs/vgap_mech/R2_tunedlens_gemma4b.json

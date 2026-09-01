@@ -1,0 +1,24 @@
+rjudge_gemma4b: 571 records (301 attack / 92 URL) | gemma-3-4b-it
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 18/883 [00:00<00:04, 173.77it/s]Loading weights:   9%|▉         | 81/883 [00:00<00:01, 437.85it/s]Loading weights:  15%|█▌        | 135/883 [00:00<00:01, 478.94it/s]Loading weights:  22%|██▏       | 198/883 [00:00<00:01, 536.74it/s]Loading weights:  30%|██▉       | 264/883 [00:00<00:01, 560.43it/s]Loading weights:  38%|███▊      | 336/883 [00:00<00:00, 610.15it/s]Loading weights:  45%|████▌     | 398/883 [00:00<00:00, 600.95it/s]Loading weights:  61%|██████    | 535/883 [00:00<00:00, 835.48it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 961.65it/s]
+readout direction d over 10 digit tokens; |d|=1.000
+  0/571
+  100/571
+  200/571
+  300/571
+  400/571
+  500/571
+
+additivity |err|=122.5343 (should be ~0)
+c_auroc: L0=0.500 mid=0.579 last=0.479 (must mirror S1 curve B: mid high, last low)
+top erasers (most negative attack-benign push on readout):
+   attn L31  dsep=-0.099
+   attn L24  dsep=-0.066
+   attn L 0  dsep=-0.061
+   attn L27  dsep=-0.052
+   attn L 7  dsep=-0.050
+   attn L19  dsep=-0.024
+   attn L21  dsep=-0.023
+   mlp L 1  dsep=-0.019
+kappa(3)=0.64  kappa(10)=0.95 -> concentrated
+late erasure  injection=-0.338  vs  URL-control=-0.398 (control should erase far less -> injection-specific)
+-> outputs/vgap_mech/B0_erasure_attrib_gemma4b.json

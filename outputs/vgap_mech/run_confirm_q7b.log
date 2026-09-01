@@ -1,0 +1,23 @@
+rjudge_qwen7b: 571 records | injection-attack=301 | control(URL)=92 | model=Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:24, 13.55it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 131.28it/s]Loading weights:  15%|█▌        | 52/339 [00:00<00:01, 167.94it/s]Loading weights:  22%|██▏       | 76/339 [00:00<00:01, 179.96it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 194.76it/s]Loading weights:  37%|███▋      | 124/339 [00:00<00:01, 194.54it/s]Loading weights:  43%|████▎     | 146/339 [00:00<00:00, 201.64it/s]Loading weights:  50%|█████     | 171/339 [00:00<00:00, 212.43it/s]Loading weights:  58%|█████▊    | 196/339 [00:01<00:00, 213.46it/s]Loading weights:  65%|██████▍   | 219/339 [00:01<00:00, 208.17it/s]Loading weights:  72%|███████▏  | 244/339 [00:01<00:00, 210.81it/s]Loading weights:  79%|███████▉  | 268/339 [00:01<00:00, 201.40it/s]Loading weights:  86%|████████▋ | 293/339 [00:01<00:00, 207.88it/s]Loading weights:  94%|█████████▎| 317/339 [00:01<00:00, 209.39it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 197.82it/s]
+== INJECTION channel ==
+    0/571
+    100/571
+    200/571
+    300/571
+    400/571
+    500/571
+== CONTROL channel ==
+    0/571
+    100/571
+    200/571
+    300/571
+    400/571
+    500/571
+  [injection] verbal AUROC=0.551 CI[0.513,0.587] | probe dom=0.955 logit=0.966 | GAP(probe-verbal)=+0.415
+  [control_url] verbal AUROC=0.962 CI[0.941,0.979] | probe dom=0.706 logit=0.915 | GAP(probe-verbal)=-0.047
+
+GAP injection=+0.415 vs control=-0.047 | control verbal AUROC=0.962
+CONFIRM (injection-specific know-say gap): True
+READ: Go if injection gap is large AND control verbal is high with a small gap (verbal channel works -> injection failure is specific, not a broken readout).
+-> outputs/vgap_mech/confirm_rjudge_qwen7b.json

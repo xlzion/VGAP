@@ -1,0 +1,27 @@
+a3s_llama8b: 1150 records (726 attack)
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|          | 2/291 [00:00<00:31,  9.08it/s]Loading weights:   8%|▊         | 23/291 [00:00<00:03, 84.63it/s]Loading weights:  14%|█▍        | 41/291 [00:00<00:02, 114.57it/s]Loading weights:  20%|██        | 59/291 [00:00<00:01, 134.09it/s]Loading weights:  26%|██▋       | 77/291 [00:00<00:01, 144.35it/s]Loading weights:  33%|███▎      | 95/291 [00:00<00:01, 151.46it/s]Loading weights:  39%|███▉      | 113/291 [00:00<00:01, 156.63it/s]Loading weights:  45%|████▌     | 131/291 [00:00<00:01, 159.96it/s]Loading weights:  51%|█████     | 149/291 [00:01<00:00, 162.99it/s]Loading weights:  57%|█████▋    | 167/291 [00:01<00:00, 162.90it/s]Loading weights:  64%|██████▎   | 185/291 [00:01<00:00, 164.22it/s]Loading weights:  71%|███████   | 206/291 [00:01<00:00, 177.15it/s]Loading weights:  77%|███████▋  | 225/291 [00:01<00:00, 179.57it/s]Loading weights:  84%|████████▍ | 244/291 [00:01<00:00, 179.23it/s]Loading weights:  91%|█████████ | 265/291 [00:01<00:00, 182.56it/s]Loading weights:  98%|█████████▊| 284/291 [00:01<00:00, 178.35it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 156.83it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  0/1150
+  100/1150
+  200/1150
+  300/1150
+  400/1150
+  500/1150
+  600/1150
+  700/1150
+  800/1150
+  900/1150
+  1000/1150
+  1100/1150
+
+DLA additivity |err|=0.0065 (should be ~0)  | total s AUROC=0.602 (should be ~chance)
+pos-discriminative comps: 20  (their sum AUROC=0.634)
+neg-discriminative comps: 21  (their sum AUROC=0.322)
+DECISIVE (OOF de-biased): pos-only AUROC=0.634  disc-only(pos+neg) AUROC=0.606
+NULL (label-permutation, same OOF select+sum): pos-only mean=0.501 max=0.517  -> signal_real=True (pos_oof must exceed null_max by >=0.05)
+cancellation test: neg/pos magnitude=0.40, within-attack corr(neg,pos)=-0.082 (< -0.3 = cancel)
+drowning test: var_pos=5.722 var_nondisc=0.124 (nondisc>=pos & pos_auroc>=0.8 = drown)
+top +disc comps: [('m20', 0.66), ('m28', 0.65), ('m30', 0.64), ('m26', 0.63), ('m25', 0.63), ('m29', 0.63)]
+top -disc comps: [('a18', 0.37), ('a24', 0.39), ('a11', 0.4), ('m18', 0.4), ('a20', 0.41), ('m12', 0.41)]
+VERDICT (single-host): inconclusive  (cross-3-host same verdict required for the mechanism claim)
+-> outputs/vgap_mech/G0_dla_a3s_llama8b.json

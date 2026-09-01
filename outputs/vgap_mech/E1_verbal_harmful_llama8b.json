@@ -1,0 +1,20 @@
+{
+  "tag": "harmfulverbal_llama8b",
+  "model": "llama3-8b-instruct",
+  "n": 571,
+  "verbal": {
+    "harmful": {
+      "type": "meta",
+      "verbal_auroc": [
+        0.4967454165128583,
+        0.4527979266642057,
+        0.5401328903654484
+      ],
+      "n_pos": 301,
+      "parse_fail_pos": 0.0033222591362126247,
+      "parse_fail_neg": 0.0,
+      "auroc_parsed_only": 0.4984012345679012,
+      "frac_no_number": 0.0017513134851138354
+    }
+  }
+}
