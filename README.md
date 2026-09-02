@@ -1,4 +1,4 @@
-# VGAP — the know–say gap in LLM safety judging
+# MODELS KNOW BUT DON’T SAY: WHY LLM SAFETY JUDGES CANNOT VERBALIZE THE ATTACKS THEY DETECT
 
 Code and experiment artifacts for studying the *know–say gap*: an LLM used as a
 safety judge carries a near-perfect internal signal about whether a trajectory
@@ -42,7 +42,7 @@ outputs/vgap_mech/   all result JSONs, verdict notes, and cluster run logs
 Typical invocation (see each script's docstring for its exact flags):
 
 ```
-CUDA_VISIBLE_DEVICES=0 python scripts/run_s1_logitlens.py \
+python scripts/run_s1_logitlens.py \
     --model Qwen/Qwen2.5-7B-Instruct --tag rjudge_qwen7b \
     --data data/rjudge_balanced.jsonl --out outputs/vgap_mech
 ```
