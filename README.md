@@ -16,7 +16,8 @@ scripts/    experiment entry points (one file per experiment)
 src/        vendored evaluation harness + vgap_common.py (judge prompt,
             parsing, probe utilities, concept definitions)
 data/       balanced evaluation sets: rjudge_balanced.jsonl, a3s_balanced.jsonl
-outputs/vgap_mech/   all result JSONs, verdict notes, and cluster run logs
+outputs/vgap_mech/   all result JSONs and run logs
+figures/    paper figures (PDF) with their plotting scripts and data
 ```
 
 ## Scripts
@@ -53,8 +54,9 @@ and Gemma-3-4b-it.
 
 ## Environment
 
-Python 3.10, PyTorch, transformers 5.x, scikit-learn, numpy. Single GPU
-(tested on 32 GB); smaller hosts fit in less.
+Python 3.10, torch 2.11.0, transformers 5.8.1, scikit-learn 1.7.2, numpy 2.2.6
+(`requirements.txt`); matplotlib for the figure scripts. Single GPU (tested on
+32 GB); smaller hosts fit in less.
 
 ## Outputs
 
