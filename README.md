@@ -17,7 +17,7 @@ src/        vendored evaluation harness + vgap_common.py (judge prompt,
             parsing, probe utilities, concept definitions)
 data/       balanced evaluation sets: rjudge_balanced.jsonl, a3s_balanced.jsonl
 outputs/vgap_mech/   all result JSONs and run logs
-figures/    paper figures (PDF) with their plotting scripts and data
+figures/    paper figures (PDF) and the layer-curve figure's source data
 ```
 
 ## Scripts
