@@ -17,7 +17,7 @@ src/        vendored evaluation harness + vgap_common.py (judge prompt,
             parsing, probe utilities, concept definitions)
 data/       balanced evaluation sets: rjudge_balanced.jsonl, a3s_balanced.jsonl
 outputs/vgap_mech/   all result JSONs and run logs
-figures/    paper figures (PDF) and the layer-curve figure's source data
+figures/    paper figures (PDF)
 ```
 
 ## Scripts
@@ -36,7 +36,6 @@ figures/    paper figures (PDF) and the layer-curve figure's source data
 | `run_r2_tunedlens.py` | Frozen-lens and tuned-lens mid-layer readout. |
 | `run_e4_layerswap.py` | Base/instruct layer-weight interchange (origin attribution). |
 | `get_e1_sample_output.py` | Dump a single sample's generated judgment. |
-| `make_A1_layer_curves.py` | Figure: layer curves (probe / lens / final-logit readout). |
 | `gen_A2_ci_table.py` | Table: concept battery with bootstrap CIs. |
 | `audit_tables.py` | Re-derives every table cell from the JSONs in `outputs/` and checks them. |
 
@@ -55,8 +54,7 @@ and Gemma-3-4b-it.
 ## Environment
 
 Python 3.10, torch 2.11.0, transformers 5.8.1, scikit-learn 1.7.2, numpy 2.2.6
-(`requirements.txt`); matplotlib for the figure scripts. Single GPU (tested on
-32 GB); smaller hosts fit in less.
+(`requirements.txt`). Single GPU (tested on 32 GB); smaller hosts fit in less.
 
 ## Outputs
 
